@@ -1,0 +1,39 @@
+body {
+  background-color: #333333;
+  margin: 0;
+  padding: 0;
+}
+.carousel {
+  width: 1200px; height: 600px;
+  border: 5px solid #dcdcdc;
+  margin: auto;
+  margin-top: 20px;
+  background-size: 100%;
+  animation-name: slide;
+  animation-duration: 120s;
+  /* 2520s; */
+}
+
+@keyframes slide {
+  /* Tadasana (Mountain Pose) */
+  0%{ background-image: url(./images/tadasana.png); }
+  10%{ background-image: url(./images/tadasana.png); }
+  /* Utkatasana (Chair Pose) */
+  25%{ background-image: url(./images/utkatasana.png); }
+  /* Padangusthasana (Big Toe Pose) */
+  35%{ background-image: url(./images/padangusthasana.png); }
+  /* Padahastasana (Hand to Foot Pose) */
+  60%{ background-image: url(./images/padahastasana.png); }
+  /* Utthita Trikonasana (Extended Triangle Pose) */
+  75%{ background-image: url(./images/utthita-trikonasana.png); }
+  /* Parivrtta Trikonasana (Revolved Triangle Pose) */
+  80%{ background-image: url(./images/parivrtta-trikonasana.png); }
+  /* Utthita Parsvakonasana (Extended Side Angle Pose) */
+  85%{ background-image: url(./images/utthita-parsvakonasana.png); }
+  /* Parivrtta Parsvakonasana (Revolved Side Angle Pose) */
+  90%{ background-image: url(./images/parivrtta-parsvakonasana.png); }
+  /* Prasarita Padottanasana (Wide-Legged Forward Bend) */
+  95%{ background-image: url(./images/prasarita-padottanasana.png); }
+  /* Parsvottanasana (Pyramid Pose) */
+  100%{ background-image: url(./images/parsvottanasana.png); }
+}
