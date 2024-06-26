@@ -5,9 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>84 Classical Yoga Asanas</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 3000;
+
+            images[0] = 'images/tadasana.png';
+            images[1] = 'images/utkatasana.png';
+            images[2] = 'images/padangusthasana.png';
+            images[3] = 'images/padahastasana.png';
+        
+            function changeImg() {
+                document.carousel.src = images[i];
+
+                if (i < images.length - 1) {
+                    i++
+                } else {
+                    i = 0;
+                }
+
+                setTimeout("changeImg()", time)
+            }
+
+            window.onload = changeImg;
+        </script>
     </head>
     <body>
-        <div class="carousel">
+        <div class="container">
+            <img class="carousel" name="carousel" width="1200" height="600">
         </div>
     </body>
 </html>
